@@ -134,3 +134,4 @@ C:\Users\Samil\source\react\ShopperList\shopperlist-backend\shopperlist-backend\
 C:\Users\Samil\source\react\ShopperList\shopperlist-backend\shopperlist-backend\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Samil\source\react\ShopperList\shopperlist-backend\shopperlist-backend\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
 C:\Users\Samil\source\react\ShopperList\shopperlist-backend\shopperlist-backend\bin\Debug\net5.0\ref\shopperlist-backend.dll
+C:\Users\Samil\source\react\ShopperList\shopperlist-backend\shopperlist-backend\obj\Debug\net5.0\shopperlist-backend.csproj.AssemblyReference.cache

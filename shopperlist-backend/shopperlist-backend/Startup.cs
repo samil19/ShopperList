@@ -32,8 +32,18 @@ namespace shopperlist_backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors(options =>
+            {
+                options.AddPolicy("MainPolicy",
+                                      builder =>
+                                      {
+                                          builder.WithOrigins("http://localhost:3000")
+                                                              .AllowAnyHeader()
+                                                              .AllowAnyMethod();
+                                      });
+            });
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            
 
             services.AddSwaggerGen(c =>
             {
@@ -73,6 +83,7 @@ namespace shopperlist_backend
 
             app.UseAuthorization();
 
+            app.UseCors("MainPolicy");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

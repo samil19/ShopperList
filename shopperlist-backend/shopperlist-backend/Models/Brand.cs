@@ -11,12 +11,10 @@ namespace shopperlist_backend.Models
         {
             BrandCategories = new HashSet<BrandCategory>();
             RawProductBrands = new HashSet<RawProductBrand>();
-            ShopLists = new HashSet<ShopList>();
         }
 
         public int Id { get; set; }
         public string Details { get; set; }
-        public double Price { get; set; }
         public string Name { get; set; }
         public DateTime DateInsert { get; set; }
         public bool? Deleted { get; set; }
@@ -24,6 +22,5 @@ namespace shopperlist_backend.Models
 
         public virtual ICollection<BrandCategory> BrandCategories { get; set; }
         public virtual ICollection<RawProductBrand> RawProductBrands { get; set; }
-        public virtual ICollection<ShopList> ShopLists { get; set; }
     }
 }

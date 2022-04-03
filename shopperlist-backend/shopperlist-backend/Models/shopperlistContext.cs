@@ -171,11 +171,11 @@ namespace shopperlist_backend.Models
             {
                 entity.ToTable("ShopList");
 
-                entity.HasOne(d => d.IdProductBrandNavigation)
+                entity.HasOne(d => d.IdRawProductBrandNavigation)
                     .WithMany(p => p.ShopLists)
-                    .HasForeignKey(d => d.IdProductBrand)
+                    .HasForeignKey(d => d.IdRawProductBrand)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_ShopList_ProductBrands");
+                    .HasConstraintName("FK_ShopList_RawProductBrand");
 
                 entity.HasOne(d => d.IdShopNavigation)
                     .WithMany(p => p.ShopLists)
