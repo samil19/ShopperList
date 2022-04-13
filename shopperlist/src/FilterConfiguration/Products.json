@@ -1,0 +1,38 @@
+[
+{
+    "type": null,
+    "name": null,
+    "dbName": "id",
+    "placeholder": null},
+{
+    "type": "input",
+    "name": "Name",
+    "dbName": "name",
+    "placeholder": "Type the name of the product you are looking for!"
+},
+{
+    "type": null,
+    "name": null,
+    "dbName": "dateInsert",
+    "placeholder": null},
+{
+    "type": null,
+    "name": null,
+    "dbName": "deleted",
+    "placeholder": null},
+{
+    "type": null,
+    "name": null,
+    "dbName": "dateDeleted",
+    "placeholder": null},
+{
+    "type": null,
+    "name": null,
+    "dbName": "rawProductBrands",
+    "placeholder": null},
+{
+    "type": null,
+    "name": null,
+    "dbName": "rawProductCategories",
+    "placeholder": null}
+]

@@ -51,7 +51,7 @@ namespace shopperlist_backend.BussinessLogic
         }
         public List<Category> Filter(string name)
         {
-            return _repo.VerifyAnd(x => x.Name == name, name).ToList();
+            return _repo.VerifyAnd(x => x.Name.Contains(name), name).ToList();
         }
     }
 }

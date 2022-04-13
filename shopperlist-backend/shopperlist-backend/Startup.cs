@@ -50,6 +50,16 @@ namespace shopperlist_backend
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "shopperlist_backend", Version = "v1" });
             });
             services.AddDbContext<shopperlistContext>(options => {
+
+
+
+
+
+
+
+
+
+
                 options.UseSqlServer("server=.;database=shopperlist;trusted_connection=true;");
         });
 
