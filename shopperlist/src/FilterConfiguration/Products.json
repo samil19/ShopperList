@@ -1,38 +1,44 @@
 [
 {
-    "type": null,
-    "name": null,
+    "type": "image",
+    "name": "Image",
+    "dbName": "image",
+    "placeholder": "https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-product-5_large.png?format=jpg&quality=90&v=1530129458"
+},
+{
+    "type": "number",
+    "name": "Identification",
     "dbName": "id",
     "placeholder": null},
 {
-    "type": "input",
+    "type": "string",
     "name": "Name",
     "dbName": "name",
     "placeholder": "Type the name of the product you are looking for!"
 },
 {
-    "type": null,
-    "name": null,
+    "type": "DateTime",
+    "name": "Date of Insert",
     "dbName": "dateInsert",
     "placeholder": null},
 {
-    "type": null,
-    "name": null,
+    "type": "bool",
+    "name": "Is it deleted?",
     "dbName": "deleted",
     "placeholder": null},
 {
-    "type": null,
-    "name": null,
+    "type": "DateTime",
+    "name": "Date of Deletion",
     "dbName": "dateDeleted",
     "placeholder": null},
 {
     "type": null,
-    "name": null,
+    "name": "Brands",
     "dbName": "rawProductBrands",
     "placeholder": null},
 {
     "type": null,
-    "name": null,
+    "name": "Categories",
     "dbName": "rawProductCategories",
     "placeholder": null}
 ]

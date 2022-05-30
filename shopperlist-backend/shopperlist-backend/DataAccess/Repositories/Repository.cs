@@ -50,7 +50,7 @@ namespace shopperlist_backend.DataAccess.Repositories
 
         public IQueryable<TEntity> VerifyAnd(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate, object obj)
         {
-            if (!String.IsNullOrEmpty(obj.ToString()) || !String.IsNullOrWhiteSpace(obj.ToString()))
+            if (obj != null && (!String.IsNullOrEmpty(obj.ToString()) || !String.IsNullOrWhiteSpace(obj.ToString())))
             {
                 return _context.Set<TEntity>().Where(predicate);
             }

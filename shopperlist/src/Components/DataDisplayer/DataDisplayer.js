@@ -2,7 +2,7 @@ import React from 'react';
 import cardIcon from '../../img/Icon/card.png'
 import listIcon from '../../img/Icon/list.png'
 
-class DataShower extends React.Component{
+class DataDisplayer extends React.Component{
     constructor(props){
         super(props);
         this.state = {"card": true, "properties": []};
@@ -63,7 +63,7 @@ await this.promiseMaker({"card": !this.state.card});
                         <p className="card-text">{card[property]}</p>
                         </span>);
                   });
-                  dom.push(<div className="card text-black bg-light mb-3 me-4 col-3" style={{"maxWidth": 18 + "rem"}} key={card.id + card[properties[namePosition]]}>
+                  dom.push(<div onClick={() => {this.props.setActive(card)}} className="card text-black bg-light mb-3 me-4 col-3" style={{"maxWidth": 18 + "rem"}} key={card.id + card[properties[namePosition]]}>
                 <div className="card-header">{card[properties[namePosition]]}</div>
                 <div className="card-body">
                   {bodyCard}
@@ -105,7 +105,7 @@ await this.promiseMaker({"card": !this.state.card});
                 );
               });
               
-              dom.push(<tr>{domNodes}</tr>);
+              dom.push(<tr onClick={() => {this.props.setActive(card)}}>{domNodes}</tr>);
               domNodes = [];
               
             });
@@ -139,4 +139,4 @@ render(){
 }
 }
 
-export default DataShower;
+export default DataDisplayer;

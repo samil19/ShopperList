@@ -9,7 +9,7 @@ import cart from "./img/grocery-cart.png";
 
 //Views
 import  Home  from "./Views/Home";
-import  RawProduct  from "./Views/RawProduct";
+import  RawProduct  from "./Views/RawProduct/RawProduct";
 
 
 class App extends React.Component{

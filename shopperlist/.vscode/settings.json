@@ -1,4 +1,4 @@
 {
-    "editor.tabCompletion": true,
+    "editor.tabCompletion": "onlySnippets",
     "editor.snippetSuggestions": "top"
 }
